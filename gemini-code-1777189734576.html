@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Technical Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #0a0a0a; color: #ededed; font-family: 'Inter', sans-serif; }
+        .bento-card { background: #161616; border: 1px solid #262626; border-radius: 1.5rem; transition: transform 0.2s; }
+        .bento-card:hover { transform: scale(1.02); border-color: #3b82f6; }
+    </style>
+</head>
+<body class="p-6 md:p-12">
+
+    <main class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-4">
+        
+        <div class="bento-card col-span-1 md:col-span-2 p-8 flex flex-col justify-center">
+            <h1 class="text-4xl font-bold mb-2">Hello, I'm <span class="text-blue-500">Your Name</span></h1>
+            <p class="text-gray-400 text-lg">CS Student focusing on System Architecture & Digital Systems.</p>
+        </div>
+
+        <div class="bento-card p-6 flex flex-col justify-around text-center">
+            <a href="#" class="hover:text-blue-400 font-medium">GitHub</a>
+            <a href="#" class="hover:text-blue-400 font-medium">LinkedIn</a>
+            <a href="#" class="hover:text-blue-400 font-medium">Twitter</a>
+        </div>
+
+        <div class="bento-card p-6">
+            <h3 class="text-blue-500 font-bold mb-2 uppercase text-xs tracking-widest">Education</h3>
+            <p class="text-sm">Computer Science & Engineering</p>
+            <p class="text-xs text-gray-500">Focusing on CSA & Binary Systems</p>
+        </div>
+
+        <div class="bento-card col-span-1 md:col-span-3 p-8">
+            <h3 class="text-blue-500 font-bold mb-2 uppercase text-xs tracking-widest">Featured Project</h3>
+            <h2 class="text-2xl font-bold mb-2">Floating Point Converter</h2>
+            <p class="text-gray-400 mb-4">A custom-built tool to visualize IEEE 754 floating-point representations from binary inputs.</p>
+            <span class="px-3 py-1 bg-blue-900/30 text-blue-400 rounded-full text-xs">Python</span>
+            <span class="px-3 py-1 bg-blue-900/30 text-blue-400 rounded-full text-xs">Logic Design</span>
+        </div>
+
+        <div class="bento-card p-6">
+            <h3 class="text-blue-500 font-bold mb-4 uppercase text-xs tracking-widest">Skills</h3>
+            <div class="flex flex-wrap gap-2 text-xs">
+                <span class="border border-gray-700 px-2 py-1 rounded">C++</span>
+                <span class="border border-gray-700 px-2 py-1 rounded">Assembly</span>
+                <span class="border border-gray-700 px-2 py-1 rounded">Git</span>
+                <span class="border border-gray-700 px-2 py-1 rounded">Digital Logic</span>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="mt-12 text-center text-gray-600 text-sm">
+        Built with HTML & Tailwind · 2026
+    </footer>
+
+</body>
+</html>
